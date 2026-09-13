@@ -8,7 +8,7 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.projectdarkhope.</groupId>
+	<groupId>com.projectdarkhope</groupId>
 	<artifactId>SocialMediaAutomationApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
@@ -73,11 +73,6 @@
 		    <groupId>com.rometools</groupId>
 		    <artifactId>rome</artifactId>
 		    <version>2.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.telusko</groupId>
-			<artifactId>springbootrest</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
