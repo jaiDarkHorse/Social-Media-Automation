@@ -1,5 +1,2 @@
 .env
-./hide/
-/target/
-./hide
-/hide
+/hide/
