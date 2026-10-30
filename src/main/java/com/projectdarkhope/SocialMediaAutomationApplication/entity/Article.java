@@ -38,11 +38,12 @@ public class Article
 
     private Integer confidence;
 
-    private String targetAccount;
-
     private boolean processed;
     
     private boolean approved;
+    
+    @Column(length = 1000)
+    private String imageUrl;
     
 	public Long getId() {
 		return id;
@@ -124,14 +125,6 @@ public class Article
 		this.confidence = confidence;
 	}
 
-	public String getTargetAccount() {
-		return targetAccount;
-	}
-
-	public void setTargetAccount(String targetAccount) {
-		this.targetAccount = targetAccount;
-	}
-
 	public boolean isProcessed() {
 		return processed;
 	}
@@ -146,6 +139,14 @@ public class Article
 
 	public void setApproved(boolean approved) {
 		this.approved = approved;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 	
 	

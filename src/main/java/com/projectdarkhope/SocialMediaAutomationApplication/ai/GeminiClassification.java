@@ -4,7 +4,6 @@ public class GeminiClassification {
 
     private String category;
     private String subcategory;
-    private String targetAccount;
     private Integer relevance;
     private Integer confidence;
 
@@ -25,14 +24,6 @@ public class GeminiClassification {
 
     public void setSubcategory(String subcategory) {
         this.subcategory = subcategory;
-    }
-
-    public String getTargetAccount() {
-        return targetAccount;
-    }
-
-    public void setTargetAccount(String targetAccount) {
-        this.targetAccount = targetAccount;
     }
 
     public Integer getRelevance() {

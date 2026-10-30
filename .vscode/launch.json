@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SocialMediaAutomationApplication<SocialMediaAutomationApplication>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.projectdarkhope.SocialMediaAutomationApplication.SocialMediaAutomationApplication",
+            "projectName": "SocialMediaAutomationApplication",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

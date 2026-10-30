@@ -22,6 +22,10 @@ public class GeneratedPost
     @Column(columnDefinition = "TEXT")
     private String hashtags;
 
+    private String category;
+
+    private String imageUrl;
+
     private String status;
 
     public GeneratedPost()
@@ -86,5 +90,21 @@ public class GeneratedPost
     public void setStatus(String status)
     {
         this.status = status;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

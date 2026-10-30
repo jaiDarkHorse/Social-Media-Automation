@@ -103,19 +103,11 @@ public class GroqService {
                 For ignore:
                 subcategory = "none"
 
-                Target account:
-
-                minecraft → "minecraft"
-                anime → "anime"
-                tamil_nadu_politics → "tamil_nadu_politics"
-                ignore → "none"
-
                 Return exactly these fields:
 
                 {
                   "category": "...",
                   "subcategory": "...",
-                  "targetAccount": "...",
                   "relevance": 0,
                   "confidence": 0
                 }

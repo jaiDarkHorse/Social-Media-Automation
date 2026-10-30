@@ -2,6 +2,7 @@ package com.projectdarkhope.SocialMediaAutomationApplication.scheduler;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -25,7 +26,7 @@ public class AutomationScheduler
     private RssFeedService rssFeedService;
 	
 	// RSS fetching - every 30 minutes
-    @Scheduled(fixedRate = 1800000)
+   // @Scheduled(fixedRate = 1800000)
     public void fetchRssFeeds() {
 
         System.out.println("=================================");

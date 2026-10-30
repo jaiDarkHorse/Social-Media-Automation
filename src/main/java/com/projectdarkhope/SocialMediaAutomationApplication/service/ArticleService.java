@@ -49,6 +49,11 @@ public class ArticleService
 		return articleRepository.findAll();
 	}
 	
+	public List<Article> getArticleByCategory(String category)
+	{
+		return articleRepository.findByCategory(category);
+	}
+
 	public void processUnprocessedArticles()
 	{
 	    List<Article> articles = articleRepository.findByProcessedFalse();
@@ -91,7 +96,6 @@ public class ArticleService
 
 	            article.setCategory(classification.getCategory());
 	            article.setSubcategory(classification.getSubcategory());
-	            article.setTargetAccount(classification.getTargetAccount());
 	            article.setRelevance(classification.getRelevance());
 	            article.setConfidence(classification.getConfidence());
 	            
@@ -165,6 +169,8 @@ public class ArticleService
 	    GeneratedPost generatedPost = new GeneratedPost();
 
 	    generatedPost.setArticle(article);
+		generatedPost.setCategory(article.getCategory());
+		generatedPost.setImageUrl(article.getImageUrl());
 	    generatedPost.setHook(geminiPost.getHook());
 	    generatedPost.setPostText(geminiPost.getPostText());
 

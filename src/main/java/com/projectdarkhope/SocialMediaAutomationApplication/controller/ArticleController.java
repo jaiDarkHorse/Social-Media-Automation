@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.projectdarkhope.SocialMediaAutomationApplication.entity.Article;
 import com.projectdarkhope.SocialMediaAutomationApplication.service.ArticleService;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @RequestMapping("/api/articles")
@@ -47,5 +49,12 @@ public class ArticleController
 	    return articleService.generateAndSavePost(article);
 
 	}
+
+	@GetMapping("/category/{category}")
+	public List<Article> getArticlesByCategory(@PathVariable String category)
+	{
+		return articleService.getArticleByCategory(category);
+	}
+	
 	
 }
